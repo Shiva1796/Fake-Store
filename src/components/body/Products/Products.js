@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+
+import Card from "../../UI/Card";
 import ProductFormat from "./ProductFormat";
 
 import classes from "./Products.module.css";

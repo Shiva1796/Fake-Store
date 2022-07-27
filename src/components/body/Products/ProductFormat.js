@@ -8,6 +8,7 @@ const ProductFormat = (props) => {
         <h3 className={classes.title}>{props.title}</h3>
         <div className={classes.description}>{props.description}</div>
       </div>
+
       <div>
         <span className={classes.addToCart}>
           <div className={classes.price}>Price: $ {props.price}</div>

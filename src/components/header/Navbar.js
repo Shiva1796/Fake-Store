@@ -8,9 +8,7 @@ const Navbar = (props) => {
         <a id="home">Home</a>
         <a id="about">About</a>
         <a id="products">Products</a>
-        <a id="contact" onClick={props.modal}>
-          Cart 🛒
-        </a>
+        <a id="cart">Cart 🛒</a>
       </div>
     </div>
   );
