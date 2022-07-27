@@ -1,13 +1,18 @@
-import classes from "./Products.module.css";
+import classes from "./ProductFormat.module.css";
 
 const ProductFormat = (props) => {
   return (
-    <li>
+    <li className={classes.format}>
+      <div className={classes.productFormat}>
+        <img className={classes.image} src={props.image}></img>
+        <h3 className={classes.title}>{props.title}</h3>
+        <div className={classes.description}>{props.description}</div>
+      </div>
       <div>
-        <h3>{props.title}</h3>
-        <div>$ {props.price}</div>
-        <div>{props.description}</div>
-        <img src={props.image}></img>
+        <span className={classes.addToCart}>
+          <div className={classes.price}>$ {props.price}</div>
+          <button className={classes.add}> + Add to Cart</button>
+        </span>
       </div>
     </li>
   );
