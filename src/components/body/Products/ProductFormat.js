@@ -10,7 +10,7 @@ const ProductFormat = (props) => {
       </div>
       <div>
         <span className={classes.addToCart}>
-          <div className={classes.price}>$ {props.price}</div>
+          <div className={classes.price}>Price: $ {props.price}</div>
           <button className={classes.add}> + Add to Cart</button>
         </span>
       </div>

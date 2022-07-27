@@ -1,6 +1,6 @@
 import classes from "./Navbar.module.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div className={classes["nav-body"]}>
       <div className={classes.logo}>‽ The Random Store ‽</div>
@@ -8,7 +8,9 @@ const Navbar = () => {
         <a id="home">Home</a>
         <a id="about">About</a>
         <a id="products">Products</a>
-        <a id="contact">Cart 🛒</a>
+        <a id="contact" onClick={props.modal}>
+          Cart 🛒
+        </a>
       </div>
     </div>
   );

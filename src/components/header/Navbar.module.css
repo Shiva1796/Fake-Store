@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 .nav-body {
-  background-color: rgb(77, 74, 74);
-  font-family: "Roboto Condensed", sans-serif;
-  color: white;
+  background-color: #1e1e24;
+  color: #fff8f0;
   width: 100vw;
   height: 10vh;
   display: flex;
@@ -31,5 +29,5 @@
 }
 
 a:hover {
-  color: red;
+  color: #cf0f01;
 }

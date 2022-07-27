@@ -22,7 +22,7 @@
 }
 
 .description {
-  font-size: 1.2rem;
+  font-size: 1rem;
   width: 40vw;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .add:hover {
-  background-color: rgba(0, 0, 0, 0.459);
-  color: white;
+  background-color: #1e1e2489;
+  color: #fff8f0;
   border-radius: 5px;
 }
