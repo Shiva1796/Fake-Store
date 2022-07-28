@@ -1,13 +1,12 @@
 import { Fragment, useState } from "react";
 
-import Header from "./components/header/Header";
+import Navbar from "./components/header/Navbar";
 import Main from "./components/body/Main";
 import Cart from "./components/header/Cart/Cart";
 import Footer from "./components/footer/Footer.js";
-import "./App.css";
 
 function App() {
-  const [cartIsShow, setCartIsShown] = useState(false);
+  const [cartIsShown, setCartIsShown] = useState(false);
 
   const showCartHandler = () => {
     setCartIsShown(true);
@@ -18,8 +17,8 @@ function App() {
   };
   return (
     <Fragment>
-      <Cart />
-      <Header />
+      {cartIsShown && <Cart onClose={hideCartHandler} />}
+      <Navbar onShowCart={showCartHandler} />
       <Main />
       <Footer />
     </Fragment>

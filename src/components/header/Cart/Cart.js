@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import Modal from "../../UI/Modal";
 import classes from "./Cart.module.css";
 
@@ -20,7 +18,7 @@ const Cart = (props) => {
   );
 
   return (
-    <Modal>
+    <Modal onClose={props.onClose}>
       {cartItems}
       <div className={classes.total}>
         <span>Total Amount</span>
