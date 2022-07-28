@@ -13,7 +13,7 @@ const Navbar = (props) => {
           <a id="about">About</a>
           <a id="products">Products</a>
         </div>
-        <HeaderCartButton onClick={props.onShowCart} />
+        <HeaderCartButton className={classes.cart} onClick={props.onShowCart} />
       </div>
     </Fragment>
   );

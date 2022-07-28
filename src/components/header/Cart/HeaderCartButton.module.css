@@ -1,39 +1,40 @@
 .button {
+  margin-right: 2rem;
   cursor: pointer;
-  font: inherit;
+  font-size: large;
   border: none;
-  background-color: #4d1601;
+  background-color: #cf0f014b;
   color: white;
-  padding: 0.75rem 3rem;
+  padding: 0.5rem 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   border-radius: 25px;
   font-weight: bold;
+  transition: 250ms;
 }
 
 .button:hover,
 .button:active {
-  background-color: #2c0d00;
+  background-color: #ffe8de61;
 }
 
 .icon {
-  width: 1.35rem;
-  height: 1.35rem;
-  margin-right: 0.5rem;
+  width: 2rem;
 }
 
 .badge {
   background-color: #b94517;
   padding: 0.25rem 1rem;
   border-radius: 25px;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   font-weight: bold;
+  transition: 250ms;
 }
 
 .button:hover .badge,
 .button:active .badge {
-  background-color: #92320c;
+  background-color: #830900f6;
 }
 
 .bump {
