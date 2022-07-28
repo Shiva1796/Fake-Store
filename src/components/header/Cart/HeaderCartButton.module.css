@@ -1,9 +1,9 @@
 .button {
   margin-right: 2rem;
   cursor: pointer;
-  font-size: large;
+  font-size: 1rem;
   border: none;
-  background-color: #cf0f014b;
+  background-color: #cf0f0191;
   color: white;
   padding: 0.5rem 2rem;
   display: flex;
@@ -24,7 +24,7 @@
 }
 
 .badge {
-  background-color: #b94517;
+  background-color: #000000;
   padding: 0.25rem 1rem;
   border-radius: 25px;
   margin-left: 0.5rem;
