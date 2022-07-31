@@ -3,6 +3,7 @@ import { Fragment, useState } from "react";
 import Navbar from "./components/header/Navbar";
 import Main from "./components/body/Main";
 import Cart from "./components/header/Cart/Cart";
+import CartProvider from "./store/CartProvider";
 import Footer from "./components/footer/Footer.js";
 
 function App() {
@@ -16,12 +17,12 @@ function App() {
     setCartIsShown(false);
   };
   return (
-    <Fragment>
+    <CartProvider>
       {cartIsShown && <Cart onClose={hideCartHandler} />}
       <Navbar onShowCart={showCartHandler} />
       <Main />
       <Footer />
-    </Fragment>
+    </CartProvider>
   );
 }
 
