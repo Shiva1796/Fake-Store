@@ -1,7 +1,18 @@
+import { useContext } from "react";
 import classes from "./ProductFormat.module.css";
 import ProductForm from "./ProductForm";
+import CartContext from "../../../store/cart-context";
 
 const ProductFormat = (props) => {
+  const cartCtx = useContext(CartContext);
+  const addToCart = (amount) => {
+    cartCtx.addItem({
+      id: props.id,
+      name: props.name,
+      amount: amount,
+      price: props.price,
+    });
+  };
   return (
     <li className={classes.format}>
       <div className={classes.productFormat}>
@@ -14,7 +25,7 @@ const ProductFormat = (props) => {
         <span className={classes.addToCart}>
           <div className={classes.price}>Price: $ {props.price}</div>
         </span>
-        <ProductForm />
+        <ProductForm onAddToCart={addToCart} />
       </div>
     </li>
   );
