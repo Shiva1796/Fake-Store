@@ -1,4 +1,5 @@
 import classes from "./ProductFormat.module.css";
+import ProductForm from "./ProductForm";
 
 const ProductFormat = (props) => {
   return (
@@ -12,8 +13,8 @@ const ProductFormat = (props) => {
       <div>
         <span className={classes.addToCart}>
           <div className={classes.price}>Price: $ {props.price}</div>
-          <button className={classes.add}> + Add to Cart</button>
         </span>
+        <ProductForm />
       </div>
     </li>
   );
