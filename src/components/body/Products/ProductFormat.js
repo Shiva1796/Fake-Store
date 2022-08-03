@@ -7,7 +7,7 @@ const ProductFormat = (props) => {
   const cartCtx = useContext(CartContext);
   const addToCart = (amount) => {
     cartCtx.addItem({
-      id: props.id,
+      key: props.id,
       name: props.name,
       amount: amount,
       price: props.price,
