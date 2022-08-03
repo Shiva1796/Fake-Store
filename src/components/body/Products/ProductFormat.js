@@ -8,7 +8,7 @@ const ProductFormat = (props) => {
   const addToCart = (amount) => {
     cartCtx.addItem({
       key: props.id,
-      name: props.name,
+      name: props.title,
       amount: amount,
       price: props.price,
     });
